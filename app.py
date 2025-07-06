@@ -1,6 +1,6 @@
 import streamlit as st
 import fitz  # PyMuPDF
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 from langchain.chains.summarize import load_summarize_chain
 from langchain.docstore.document import Document
 import os
