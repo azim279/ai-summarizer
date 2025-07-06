@@ -6,7 +6,11 @@ from langchain.docstore.document import Document
 import os
 
 # Set your OpenAI API key
-OPENAI_API_KEY = "your-api-key-here"
+import streamlit as st
+import os
+
+# Load OpenAI key from Streamlit secrets
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 # Page config
