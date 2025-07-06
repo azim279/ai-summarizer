@@ -6,12 +6,13 @@ from langchain.docstore.document import Document
 import os
 
 # Set your OpenAI API key
-import streamlit as st
 import os
+import streamlit as st
 
-# Load OpenAI key from Streamlit secrets
+# Load OpenAI API key from Streamlit Secrets
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
+
 
 # Page config
 st.set_page_config(page_title="AI Research Paper Summarizer", layout="centered")
